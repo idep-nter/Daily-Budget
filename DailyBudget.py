@@ -3,8 +3,8 @@ import math
 
 def main():
     """
-    Main function starts by determining number of days of the current month and
-    then takes necessary data from user.
+    The main function starts by determining a number of days of a current month and
+    then takes necessary data from a user.
     If there are any regular expenses it prints them in a structured table.
     Then it subtracts expenses and savings from monthly salary and divides it
     by number of days.
@@ -30,7 +30,7 @@ def main():
 
 def days(m, y):
     """
-    Returns number of days based on the current month and year.
+    Returns a number of days based on the current month and year.
     """
     d = 0
     if m == 2 and isLeap(y):
@@ -54,7 +54,7 @@ def isLeap(y):
 
 def getSalary():
     """
-    Asks user to enter his salary and checks if it's an integer.
+    Asks the user to enter his salary and checks if it's an integer.
     """
     while True:
         try:
@@ -67,7 +67,7 @@ def getSalary():
 
 def getCurrency():
     """
-    Asks user to enter currency and checks if all characters in the string
+    Asks the user to enter currency and checks if all characters in a string
     are alphabets.
     """
     while True:
@@ -83,7 +83,7 @@ def getCurrency():
 
 def getSavings():
     """
-    Asks user to enter how much he wants to save and checks if it's an integer.
+    Asks the user to enter how much he wants to save and checks if it's an integer.
     """
     while True:
         try:
@@ -97,9 +97,9 @@ def getSavings():
 
 def makeExpenses():
     """
-    Allows user to enter regular monthly expenses that will be subtracted from
+    Allows the user to enter regular monthly expenses that will be subtracted from a
     monthly budget and saves them into a dictionary.
-    It also checks correct format of given data.
+    It also checks a correct format of given data.
     """
     expenses = {}
     while True:
@@ -119,7 +119,7 @@ def makeExpenses():
 
 def countTotalExpenses(expenses):
     """
-    Takes expenses as a parameter and returns sum of them.
+    Takes expenses as a parameter and returns a sum of them.
     """
     totalExpenses = 0
     for ex in expenses.values():
@@ -129,7 +129,7 @@ def countTotalExpenses(expenses):
 
 def expensesTable():
     """
-    Prints structured table of all monthly expenses.
+    Prints a structured table of all monthly expenses.
     """
     print('=' * 40)
     print('These are you regular monthly expenses:\n')
@@ -142,7 +142,7 @@ def expensesTable():
 
 def getMonthName():
     """
-    Returns name of the current month in an alphabetic form.
+    Returns a name of the current month in an alphabetic form.
     """
     date = datetime.datetime.now()
     month = date.strftime("%B")
