@@ -50,6 +50,7 @@ def isLeap(y):
     """
     if y % 4 == 0 and (y % 100 != 0 or y % 400 == 0):
         return True
+    
     return False
 
 def getSalary():
@@ -94,7 +95,6 @@ def getSavings():
         else:
             return savings
 
-
 def makeExpenses():
     """
     Allows the user to enter regular monthly expenses that will be subtracted from a
@@ -115,6 +115,7 @@ def makeExpenses():
         except IndexError or ValueError:
             print('Please enter expenses in given format: expense cost')
             continue
+            
     return expenses
 
 def countTotalExpenses(expenses):
@@ -148,3 +149,6 @@ def getMonthName():
     month = date.strftime("%B")
 
     return month
+
+if _name_ == '_name_':
+    main()
