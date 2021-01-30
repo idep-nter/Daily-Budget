@@ -150,5 +150,5 @@ def getMonthName():
 
     return month
 
-if _name_ == '_name_':
+if _name_ == '_main_':
     main()
